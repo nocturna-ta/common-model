@@ -16,3 +16,12 @@ type VoterMessage struct {
 	Region       string `json:"region,omitempty"`
 	IsRegistered bool   `json:"is_registered,omitempty"`
 }
+
+type ElectionMessage struct {
+	BaseModelMessage
+	ID            string `json:"id,omitempty"`
+	CandidateName string `json:"candidate_name,omitempty"`
+	CandidateNo   string `json:"candidate_no,omitempty"`
+	VoteCount     int    `json:"vote_count,omitempty"`
+	IsActive      bool   `json:"is_active,omitempty"`
+}
