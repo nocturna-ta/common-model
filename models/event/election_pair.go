@@ -4,14 +4,15 @@ import "time"
 
 type ElectionPairMessage struct {
 	BaseModelMessage
-	ID            string                     `json:"id,omitempty"`
-	ElectionNo    string                     `json:"election_no,omitempty"`
-	VoteCount     int                        `json:"vote_count,omitempty"`
-	IsActive      bool                       `json:"is_active,omitempty"`
-	PairPhotoPath string                     `json:"pair_photo_path,omitempty"`
-	President     CandidateInfoMessage       `json:"president,omitempty"`
-	VicePresident CandidateInfoMessage       `json:"vice_president,omitempty"`
-	Detail        *ElectionPairDetailMessage `json:"detail,omitempty"`
+	ID              string                     `json:"id,omitempty"`
+	ElectionNo      string                     `json:"election_no,omitempty"`
+	VoteCount       int                        `json:"vote_count,omitempty"`
+	IsActive        bool                       `json:"is_active,omitempty"`
+	PairPhotoPath   string                     `json:"pair_photo_path,omitempty"`
+	President       CandidateInfoMessage       `json:"president,omitempty"`
+	VicePresident   CandidateInfoMessage       `json:"vice_president,omitempty"`
+	Detail          *ElectionPairDetailMessage `json:"detail,omitempty"`
+	TransactionHash string                     `json:"transaction_hash,omitempty"`
 }
 
 type CandidateInfoMessage struct {
