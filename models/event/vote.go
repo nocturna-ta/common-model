@@ -14,6 +14,7 @@ type VoteSubmitMessage struct {
 
 type VoteProcessedMessage struct {
 	VoteID          string    `json:"vote_id,omitempty"`
+	VoterID         string    `json:"voter_id,omitempty"`
 	Status          string    `json:"status,omitempty"`
 	TransactionHash string    `json:"transaction_hash,omitempty"`
 	ErrorMessage    string    `json:"error_message,omitempty"`
